@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edu Chatbot</title>
+</head>
+
+<body>
+
+<h1>Edu Chatbot 🤖</h1>
+<p>Chat với AI ở góc phải màn hình.</p>
+
+<script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/oversea/index.js"></script>
+
+<script>
+new CozeWebSDK.WebChatClient({
+  config: {
+    bot_id: "7616359605748121653"
+  },
+  componentProps: {
+    title: "Edu Chatbot"
+  },
+  auth: {
+    type: "token",
+    token: "pat_PfcV9oWCNv0OqCJ7f54wlTHlfSwwdqQgzQUzyHu0C97DMLcBt45uvqbO2CCybOIU",
+    onRefreshToken: function () {
+      return "pat_PfcV9oWCNv0OqCJ7f54wlTHlfSwwdqQgzQUzyHu0C97DMLcBt45uvqbO2CCybOIU"
+    }
+  }
+});
+</script>
+
+</body>
+</html>
