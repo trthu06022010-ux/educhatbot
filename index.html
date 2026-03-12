@@ -1,19 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Edu Chatbot</title>
+</head>
+
+<body>
+
+<h1>Edu Chatbot 🤖</h1>
 
 <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/oversea/index.js"></script>
+
 <script>
-  new CozeWebSDK.WebChatClient({
-    config: {
-      bot_id: '7616359605748121653',
-    },
-    componentProps: {
-      title: 'Coze',
-    },
-    auth: {
-      type: 'token',
-      token: 'pat_********',
-      onRefreshToken: function () {
-        return 'pat_********'
-      }
+new CozeWebSDK.WebChatClient({
+  config: {
+    bot_id: "7616359605748121653"
+  },
+  componentProps: {
+    title: "Edu Chatbot"
+  },
+  auth: {
+    type: "token",
+    token: "pat_PfcV9oWCNv0OqCJ7f54wlTHlfSwwdqQgzQUzyHu0C97DMLcBt45uvqbO2CCybOIU",
+    onRefreshToken: function () {
+      return "pat_PfcV9oWCNv0OqCJ7f54wlTHlfSwwdqQgzQUzyHu0C97DMLcBt45uvqbO2CCybOIU"
     }
-  });
+  }
+});
 </script>
+
+</body>
+</html>
